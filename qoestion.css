@@ -8,7 +8,7 @@
 }
 
 #test { 
-    background-color: red;
+    background-color: lightpink;
 }
 
 #test input+label{
@@ -17,4 +17,5 @@
 
 #test input:checked+label{
     opacity: 1;
+    background-color: lightblue;
 }
