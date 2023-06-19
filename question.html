@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前期末テスト 情報対策</title>
+    <link rel="stylesheet" href="qoestion.css">
+</head>
+<body>
+    <form name="myTest">
+    <h1>前期末テスト 情報対策サイト</h1>
+
+    <h2>講義ノート第9回</h2>
+    
+        <!-- <span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span> -->
+
+        <li>確認 1 暗号に関する用語「平文」の読み方をひらがな 4 文字で答えよ 。</li>
+        <span id="test"><input type="checkbox" id="blank1"><label for="blank1">　ひらぶん　</label></span>
+
+        <li>確認 2 暗号化と復号化の処理が(相対的に)高速であるのは「公開鍵暗号方式」と「共通鍵暗号方式」のどちらか答えよ 。</li>
+        <span id="test"><input type="checkbox" id="blank2"><label for="blank2">　共通鍵暗号　</label></span>
+
+        <li>確認 3 共通鍵暗号方式の別名として適切なものをすべて選んで答えよ 。</li>
+        <p>1 対称鍵暗号 2 非対称鍵暗号 3 秘密鍵暗号 4 公開鍵暗号 5 デジタル署名</p>
+        <span id="test"><input type="checkbox" id="blank3"><label for="blank3">　1,3　</label></span>
+
+        <li>確認 4 情報の秘匿を目的として公開鍵暗号によって暗号文を作成したい。この目的で使用すべき鍵は「公開鍵」と「秘密鍵」のどちらか答えよ 。</li>
+        <span id="test"><input type="checkbox" id="blank4"><label for="blank4">　公開鍵　</label></span>
+
+        <li>確認 5 「公開鍵暗号方式において、公開鍵を使って暗号化した暗号文は、その公開鍵とペアとなる秘密鍵でしか復号化できない」。この説明は「正しい」か「誤り」であるか答えよ。</li>
+        <span id="test"><input type="checkbox" id="blank5"><label for="blank5">　正しい　</label></span>
+
+        <li>確認6公開鍵暗号を使ってFrankからEllenに向けて暗号化した情報(暗号文)を送信したい。このケースにおいて、公開鍵と秘密鍵のペアを作成し、相手に公開鍵を渡す必要があるのは、「Ellen」と「Frank」のどちらか。</li>
+        <span id="test"><input type="checkbox" id="blank6"><label for="blank6">　Ellen　</label></span>
+
+        <li>確認 7 公開鍵暗号を使って Alice と Bob で相互に暗号文のやりとりを行っている。このとき Bob の不注意によって「Bob の秘密鍵」が Mallory に盗まれてしまった。「Bob の秘密鍵」によって Malloryが復号化できるのは、次のうちどれか答えよ。</li>
+        <p>1 Bob に送信するために Alice が作成した暗号文 2 Alice に送信するために Bob が作成した暗号文 3 1と2の両方</p>
+        <span id="test"><input type="checkbox" id="blank7"><label for="blank7">　1　</label></span>
+
+        <li>確認 8 Alice は「秘密の情報」を作成し、それを「Bob の公開鍵」を使って暗号化した。このとき、暗号化した本人である Alice は、暗号文を復号化することが「できる」か「できない」か答えよ。</li>
+        <span id="test"><input type="checkbox" id="blank8"><label for="blank8">　できない　</label></span>
+
+        <li>確認9 次の各文章について、公開鍵暗号(デジタル署名を含む)に関する適切な説明となるように下線部の誤りを修正せよ。</li>
+        <p>1 Charlie から Eve に情報を送信したい。Charlie が自身のデジタル署名を作成ときに使用すべき鍵は <u>Eve の公開鍵</u>である。</p>
+        <span id="test"><input type="checkbox" id="blank9"><label for="blank9">　Charlieの秘密鍵　</label></span>
+
+        <p>2 Charlie から Eve に届いた情報にデジタル署名がついていた。Eve 側において、このデジタル署名が Charlie のものかを確認するために使用すべき鍵は <u>Eve の秘密鍵</u>である。</p>
+        <span id="test"><input type="checkbox" id="blank10"><label for="blank10">　Charlieの公開鍵　</label></span>
+
+        <p>3 <u>デジタル署名</u>を目的とした暗号化では、公開鍵を使って暗号化し、秘密鍵を使って復号化する。</p>
+        <span id="test"><input type="checkbox" id="blank11"><label for="blank11">　情報の秘匿　</label></span>
+
+        <p>4 RSA 暗号において<u>秘密鍵から公開鍵</u>を作成することは基本的にはできない。</p>
+        <span id="test"><input type="checkbox" id="blank12"><label for="blank12">　公開鍵から秘密鍵　</label></span>
+
+        <li>確認 10 X さんは、Y さんにインターネットを使って電子メールを送ろうとしている。電子メールの内容を秘密にする必要があるので、公開鍵暗号方式を使って暗号化して送信したい。電子メールの内容を暗号化するのに使用する鍵はどれか。(基本情報技術者試験 H 25 年春期)</li>
+        <p>ア:X さんの公開鍵 イ:X さんの秘密鍵 ウ:Y さんの公開鍵 エ:Y さんの秘密鍵</p>
+        <span id="test"><input type="checkbox" id="blank13"><label for="blank13">　ウ　</label></span>
+
+        <li>確認 11 文書の内容を秘匿して送受信する場合の公開鍵暗号方式における鍵と暗号化アルゴリズムの取扱いのうち、適切なものはどれか。(基本情報技術者試験 H 24 年春期)</li>
+        <p>ア:暗号化鍵と復号鍵は公開するが,暗号化アルゴリズムは秘密にしなければならない。</p>
+        <p>イ:暗号化鍵は公開するが,復号鍵と暗号化アルゴリズムは秘密にしなければならない。</p>
+        <p>ウ:暗号化鍵と暗号化アルゴリズムは公開するが,復号鍵は秘密にしなければならない。</p>
+        <p>エ:復号鍵と暗号化アルゴリズムは公開するが,暗号化鍵は秘密にしなければならない。</p>
+        <span id="test"><input type="checkbox" id="blank14"><label for="blank14">　ウ　</label></span>
+
+        <li>確認 12 デジタル署名における署名鍵の用い方と、デジタル署名を行う目的のうち、適切なものはどれか。(基本情報技術者試験 H 27 年春期)</li>
+        <p>ア:受信者が署名鍵を使って、暗号文を元のメッセージに戻すことができるようにする。</p>
+        <p>イ:送信者が固定文字列を付加したメッセージを、署名鍵を使って暗号化することによって、受信者がメッセージの改ざん部位を特定できるようにする。</p>
+        <p>ウ:送信者が署名鍵を使って署名を作成し、それをメッセージに付加することによって、受信者が送信者を確認できるようにする。</p>
+        <p>エ:送信者が署名鍵を使ってメッセージを暗号化することによって、メッセージの内容を関係者以外に分からないようにする。</p>
+        <span id="test"><input type="checkbox" id="blank15"><label for="blank15">　ウ　</label></span>
+
+        <li>確認 13 デジタル署名などに用いるハッシュ関数の特徴はどれか。(基本情報技術者試験 H 25 年秋期)</li>
+        <p>ア:同じメッセージダイジェストを出力する異なる二つのメッセージは容易に求められる。</p>
+        <p>イ:メッセージが異なっていても、メッセージダイジェストは全て同じである。</p>
+        <p>ウ:メッセージダイジェストからメッセージを復元することは困難である。</p>
+        <p>エ:メッセージダイジェストの長さはメッセージの長さによって異なる。</p>
+        <span id="test"><input type="checkbox" id="blank16"><label for="blank16">　ウ　</label></span>
+
+
+    <h2>講義ノート第10回</h2>
+    
+
+    <input type="button" value="全て隠す" onclick="checkCLEAR()">
+    <input type="button" value="全て表示" onclick="checkALL()">
+
+    
+    
+
+    </form>
+
+<script></script>
+<script type="text/javascript" src="question.js"></script>
+
+</body>
+</html>

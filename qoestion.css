@@ -1,0 +1,20 @@
+#test label{
+    cursor: pointer;
+}
+
+#test input{
+    display: none;
+    margin: 0px;
+}
+
+#test { 
+    background-color: red;
+}
+
+#test input+label{
+    opacity: 0;
+}
+
+#test input:checked+label{
+    opacity: 1;
+}
