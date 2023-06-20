@@ -6,88 +6,208 @@
     <title>前期末テスト 情報対策</title>
     <link rel="stylesheet" href="qoestion.css">
 </head>
+
 <body>
     <form name="myTest">
-    <h1>前期末テスト <br> 情報対策サイト</h1>
-
+    <h1>前期末テスト <br>情報対策サイト</h1>
     <input type="button" value="全て隠す" onclick="checkCLEAR()">
     <input type="button" value="全て表示" onclick="checkALL()">
 
     <h2>講義ノート第9回</h2>
     
-        <!-- <span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span> -->
+        <!-- <li></li>
+        <p><span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span></p> -->
 
         <li>確認 1 暗号に関する用語「平文」の読み方をひらがな 4 文字で答えよ 。</li>
-        <span id="test"><input type="checkbox" id="blank1"><label for="blank1">　ひらぶん　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank1"><label for="blank1">　ひらぶん　</label></span></p>
 
         <li>確認 2 暗号化と復号化の処理が(相対的に)高速であるのは「公開鍵暗号方式」と「共通鍵暗号方式」のどちらか答えよ 。</li>
-        <span id="test"><input type="checkbox" id="blank2"><label for="blank2">　共通鍵暗号　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank2"><label for="blank2">　共通鍵暗号　</label></span></p>
 
         <li>確認 3 共通鍵暗号方式の別名として適切なものをすべて選んで答えよ 。</li>
         <p>1 対称鍵暗号 2 非対称鍵暗号 3 秘密鍵暗号 4 公開鍵暗号 5 デジタル署名</p>
-        <span id="test"><input type="checkbox" id="blank3"><label for="blank3">　1,3　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank3"><label for="blank3">　1,3　</label></span></p>
 
         <li>確認 4 情報の秘匿を目的として公開鍵暗号によって暗号文を作成したい。この目的で使用すべき鍵は「公開鍵」と「秘密鍵」のどちらか答えよ 。</li>
-        <span id="test"><input type="checkbox" id="blank4"><label for="blank4">　公開鍵　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank4"><label for="blank4">　公開鍵　</label></span></p>
 
         <li>確認 5 「公開鍵暗号方式において、公開鍵を使って暗号化した暗号文は、その公開鍵とペアとなる秘密鍵でしか復号化できない」。この説明は「正しい」か「誤り」であるか答えよ。</li>
-        <span id="test"><input type="checkbox" id="blank5"><label for="blank5">　正しい　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank5"><label for="blank5">　正しい　</label></span></p>
 
         <li>確認6公開鍵暗号を使ってFrankからEllenに向けて暗号化した情報(暗号文)を送信したい。このケースにおいて、公開鍵と秘密鍵のペアを作成し、相手に公開鍵を渡す必要があるのは、「Ellen」と「Frank」のどちらか。</li>
-        <span id="test"><input type="checkbox" id="blank6"><label for="blank6">　Ellen　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank6"><label for="blank6">　Ellen　</label></span></p>
 
         <li>確認 7 公開鍵暗号を使って Alice と Bob で相互に暗号文のやりとりを行っている。このとき Bob の不注意によって「Bob の秘密鍵」が Mallory に盗まれてしまった。「Bob の秘密鍵」によって Malloryが復号化できるのは、次のうちどれか答えよ。</li>
         <p>1 Bob に送信するために Alice が作成した暗号文 2 Alice に送信するために Bob が作成した暗号文 3 1と2の両方</p>
-        <span id="test"><input type="checkbox" id="blank7"><label for="blank7">　1　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank7"><label for="blank7">　1　</label></span></p>
 
         <li>確認 8 Alice は「秘密の情報」を作成し、それを「Bob の公開鍵」を使って暗号化した。このとき、暗号化した本人である Alice は、暗号文を復号化することが「できる」か「できない」か答えよ。</li>
-        <span id="test"><input type="checkbox" id="blank8"><label for="blank8">　できない　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　できない　</label></span></p>
 
         <li>確認9 次の各文章について、公開鍵暗号(デジタル署名を含む)に関する適切な説明となるように下線部の誤りを修正せよ。</li>
         <p>1 Charlie から Eve に情報を送信したい。Charlie が自身のデジタル署名を作成ときに使用すべき鍵は <u>Eve の公開鍵</u>である。</p>
-        <span id="test"><input type="checkbox" id="blank9"><label for="blank9">　Charlieの秘密鍵　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　Charlieの秘密鍵　</label></span></p>
 
         <p>2 Charlie から Eve に届いた情報にデジタル署名がついていた。Eve 側において、このデジタル署名が Charlie のものかを確認するために使用すべき鍵は <u>Eve の秘密鍵</u>である。</p>
-        <span id="test"><input type="checkbox" id="blank10"><label for="blank10">　Charlieの公開鍵　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank10"><label for="blank10">　Charlieの公開鍵　</label></span></p>
 
         <p>3 <u>デジタル署名</u>を目的とした暗号化では、公開鍵を使って暗号化し、秘密鍵を使って復号化する。</p>
-        <span id="test"><input type="checkbox" id="blank11"><label for="blank11">　情報の秘匿　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　情報の秘匿　</label></span></p>
 
         <p>4 RSA 暗号において<u>秘密鍵から公開鍵</u>を作成することは基本的にはできない。</p>
-        <span id="test"><input type="checkbox" id="blank12"><label for="blank12">　公開鍵から秘密鍵　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　公開鍵から秘密鍵　</label></span></p>
 
         <li>確認 10 X さんは、Y さんにインターネットを使って電子メールを送ろうとしている。電子メールの内容を秘密にする必要があるので、公開鍵暗号方式を使って暗号化して送信したい。電子メールの内容を暗号化するのに使用する鍵はどれか。(基本情報技術者試験 H 25 年春期)</li>
         <p>ア:X さんの公開鍵 イ:X さんの秘密鍵 ウ:Y さんの公開鍵 エ:Y さんの秘密鍵</p>
-        <span id="test"><input type="checkbox" id="blank13"><label for="blank13">　ウ　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　ウ　</label></span></p>
 
         <li>確認 11 文書の内容を秘匿して送受信する場合の公開鍵暗号方式における鍵と暗号化アルゴリズムの取扱いのうち、適切なものはどれか。(基本情報技術者試験 H 24 年春期)</li>
         <p>ア:暗号化鍵と復号鍵は公開するが,暗号化アルゴリズムは秘密にしなければならない。</p>
         <p>イ:暗号化鍵は公開するが,復号鍵と暗号化アルゴリズムは秘密にしなければならない。</p>
         <p>ウ:暗号化鍵と暗号化アルゴリズムは公開するが,復号鍵は秘密にしなければならない。</p>
         <p>エ:復号鍵と暗号化アルゴリズムは公開するが,暗号化鍵は秘密にしなければならない。</p>
-        <span id="test"><input type="checkbox" id="blank14"><label for="blank14">　ウ　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　ウ　</label></span></p>
 
         <li>確認 12 デジタル署名における署名鍵の用い方と、デジタル署名を行う目的のうち、適切なものはどれか。(基本情報技術者試験 H 27 年春期)</li>
         <p>ア:受信者が署名鍵を使って、暗号文を元のメッセージに戻すことができるようにする。</p>
         <p>イ:送信者が固定文字列を付加したメッセージを、署名鍵を使って暗号化することによって、受信者がメッセージの改ざん部位を特定できるようにする。</p>
         <p>ウ:送信者が署名鍵を使って署名を作成し、それをメッセージに付加することによって、受信者が送信者を確認できるようにする。</p>
         <p>エ:送信者が署名鍵を使ってメッセージを暗号化することによって、メッセージの内容を関係者以外に分からないようにする。</p>
-        <span id="test"><input type="checkbox" id="blank15"><label for="blank15">　ウ　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank15"><label for="blank15">　ウ　</label></span></p>
 
         <li>確認 13 デジタル署名などに用いるハッシュ関数の特徴はどれか。(基本情報技術者試験 H 25 年秋期)</li>
         <p>ア:同じメッセージダイジェストを出力する異なる二つのメッセージは容易に求められる。</p>
         <p>イ:メッセージが異なっていても、メッセージダイジェストは全て同じである。</p>
         <p>ウ:メッセージダイジェストからメッセージを復元することは困難である。</p>
         <p>エ:メッセージダイジェストの長さはメッセージの長さによって異なる。</p>
-        <span id="test"><input type="checkbox" id="blank16"><label for="blank16">　ウ　</label></span>
+        <p><span id="test"><input type="checkbox" id="blank16"><label for="blank16">　ウ　</label></span></p>
 
+        <br>
 
     <h2>講義ノート第10回</h2>
+    <li>演習１ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
+    <p><span id="test"><input type="checkbox" id="blank17"><label for="blank17">　　</label></span></p>
+    
+    <li>演習２ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
+    <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　　</label></span></p>
+    
+    <li>演習３ 試行回数を10000にしてみよ。</li>
+    <p><span id="test"><input type="checkbox" id="blank19"><label for="blank19">　　</label></span></p>
+    
+    <li>演習４ モンロカルロ・シュミュレーションで√２を求めてみよ</li>
+    <p>ヒント:0から2までの乱数(=RAND()*2)を発生させて、それが√2より小さい確率は√2/2になるので、それを2倍すれば√2になります。ただし、√2を求めるために√2を使ってはいけないので、乱数が√2より小さい確率を求める代わりに、乱数の2乗が2より小さい確率を使います。</p>
+    <p><span id="test"><input type="checkbox" id="blank20"><label for="blank20">　　</label></span></p>
+    
+    <li>統計仮説における2つの仮設は何か答えよ。</li>
+    <p><span id="test"><input type="checkbox" id="blank21"><label for="blank21">　　</label></span></p>
+    
+    <li>多くの場合、任意の確率分布に伴う母集団から抽出された標本の数が十分多い場合、標本平均の分布は正規分布に伴うという定理を何というか答えよ。</li>
+    <p><span id="test"><input type="checkbox" id="blank22"><label for="blank22">　　</label></span></p>
+
+    <br>
+    <input type="button" value="全て隠す" onclick="checkCLEAR()">
+    <input type="button" value="全て表示" onclick="checkALL()">
+
+    <h1>小テスト範囲</h1>
+    <h2>小テスト第一回</h2>
+
+    <li>バイオメトリクス認証に関する記述として、適切なものはどれか。</li>
+    <p>ア：指紋や静脈を使用した認証は、ショルダーハックなどののぞき見行為行為によって容易に認証情報漏が漏洩する。</p>
+    <p>イ：装置が大型なので、携帯電話やスマートフォンには搭載できない</p>
+    <p>ウ：筆跡やキースㇳロークなどの本人の行動的特徴を利用をりようしたものも含まれる。</p>
+    <p>エ：他人を本人と誤って認証してしまうリスクがない。</p>
+    <p><span id="test"><input type="checkbox" id="blank23"><label for="blank23">　ウ　</label></span></p>
+
+    <li>ソーシャルエンジニアリングに該当する行為の例はどれか。</li>
+    <p>ア：あらゆる文字の組み合わせを総当たりで機械的に入力することによって、パスワードを見つけ出す。</p>
+    <p>イ：肩越しに盗み見して入手したパスワードを利用し、他人になりすましてシステムを不正利用する。</p>
+    <p>ウ：標的のサーバーに大量のリクエストを送りつけて過負荷状態にすることによって、サービスの提供を妨げる。</p>
+    <p>エ：プログラムで確保している記憶領域よりも長いデータを入力することによってバッファをあふれさせ、不正にプログラムを実行させる。</p>
+    <p><span id="test"><input type="checkbox" id="blank24"><label for="blank24">　イ　</label></span></p>
+
+    <li>攻撃対象とは別のWebサイトから盗み出すなどによって、不正に取得した大量の認証を流用し、標的とするWebサイトに不正に侵入を試みるものはどれか。</li>
+    <p>ア：DoS攻撃</p>
+    <p>イ：SQLインジェクション</p>
+    <p>ウ：パスワードリスト攻撃</p>
+    <p>エ：フィッシング</p>
+    <p><span id="test"><input type="checkbox" id="blank25"><label for="blank25">　ウ　</label></span></p>
+
+    <li>ファイルサーバに保存されている文書ファイルの内容をPCで直接編集した後、上書き保存しようとしたら”権限がないので保存できません”というメッセージが表示された。この文書ファイルとそれが保存されているフォルダに設定されていた権限の組合わせとして、適切なものはどれか。</li>
+    <p>ア：</p>
+    <p>イ：</p>
+    <p>ウ：</p>
+    <p>エ：</p>
+    <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　イ　</label></span></p>
+
+    <li>インターネットにおいてドメイン名とIPアドレスの対応付けを行うサービスを提供しているサーバに保管されている管理情報を書き換えることによって、利用者を偽のサイトへ誘導する攻撃はどれか。</li>
+    <p>ア：DDoS攻撃</p>
+    <p>イ：DNSキャッシュポイニング</p>
+    <p>ウ：SQLインジェクション</p>
+    <p>エ：フィッシング</p>
+    <p><span id="test"><input type="checkbox" id="blank27"><label for="blank27">　イ　</label></span></p>
+
+    <li>受信した電子メールに添付されていた文書ファイルを開いたところ、PCの挙動がおかしくなった。疑われる攻撃として、適切なものはどれか。</li>
+    <p>ア：SQLインジェクション</p>
+    <p>イ：クロスサイトスクリプティング</p>
+    <p>ウ：ショルダーハッキング</p>
+    <p>エ：マクロウイルス</p>
+    <p><span id="test"><input type="checkbox" id="blank28"><label for="blank28">　エ　</label></span></p>
+
+    <li>ランサムウェアによる損害を受けてしまった場合を想定して、その損害を軽減するための対策例として、適切なものはどれか。</li>
+    <p>ア：PC内の重要なファイルが、PCから取り外し可能な外部記憶装置に定期的にバックアップしておく。</p>
+    <p>イ：Webサービスごとに、使用するIDやパスワードを異なるものにしておく。</p>
+    <p>ウ：マルウェア対策ソフトを用いてPC内の全ファイルの検索をしておく。</p>
+    <p>エ：無線LANを使用するときには、WPA2を用いて通信内容を暗号化しておく。</p>
+    <p><span id="test"><input type="checkbox" id="blank29"><label for="blank29">　ア　</label></span></p>
+
+    <li>a~dのうち、ファイヤーウォールの設置によって実現できる事項として、適切なものだけを全て挙げたものはどれか。</li>
+    <p>a：外部に公開するWebサーバやメールサーバを設置するためのDMZの構築</p>
+    <p>b：外部のネットワークから組織内部のネットワークへの不正アクセスを防止</p>
+    <p>c：サーバールームの入り口に設置することによるアクセスを承認された人だけの入室</p>
+    <p>d：不特定多数のクライアントからの大量の要求を複数のサーバに動的に振り分けることによるサーバ負荷の分散</p>
+    <p>ア：a,b 　イ：a,b,d 　ウ：b,c　 エ：c,d</p>
+    
+    <p><span id="test"><input type="checkbox" id="blank30"><label for="blank30">　ア　</label></span></p>
+
+    <li>外部と通信するメールサーバをDMZに設置する理由として、適切なものはどれか。</li>
+    <p>ア：機密ファイルが添付された電子メールが、外部に送信されるのを防ぐため</p>
+    <p>イ：社員が外部の取引先へ送信する際に電子メールの暗号化を行うため</p>
+    <p>ウ：メーリングリスㇳのメンバのメールアドレスが外部に漏れないようにするため</p>
+    <p>エ：メールサーバを踏み台にして、外部から社内ネットワークに侵入させないため</p>
+    <p><span id="test"><input type="checkbox" id="blank31"><label for="blank31">　エ　</label></span></p>
+
+
+    <li>公開鍵暗号方式では、暗号化のための鍵と複合のための鍵が必要となる。4人が相互に通信内容を暗号化して送りたい場合は、全部で8個の鍵が必要である。このうち、非公開にする鍵は何個か。</li>
+    <p>ア：1</p>
+    <p>イ：2</p>
+    <p>ウ：4</p>
+    <p>エ：6</p>
+    <p><span id="test"><input type="checkbox" id="blank32"><label for="blank32">　ウ　</label></span></p>
     
 
+    <li>d電子メールにデジタル署名を付与して送信するとき、信頼できる認証局から発行された電子証明書を使用することに比べて、送信者が自分で作成した電子署名所を使用した場合の受信側のリスクとして、適切なものはどれか。</li>
+    <p>ア：電子メールが正しい相手から送られてきたかどうかが確認できなくなる。</p>
+    <p>イ：電子メールが途中で盗み見られている危険性が高まる。</p>
+    <p>ウ：電子メールが途中で紛失する危険性が高まる。</p>
+    <p>エ：電子メールに文字化けが途中で発生しやすくなる。</p>
+    <p><span id="test"><input type="checkbox" id="blank33"><label for="blank33">　ア　</label></span></p>
+
+    <li>IoTデバイス群とそれを管理するIoTサーバで構成されるIoTシステムがある。全てのIoTデバイスは同一の鍵を用いて通信の暗号化を行い、IoTサーバではIoTデバイスが持つ鍵とは異なる鍵で通信の複合を行うとき、この暗号技術はどれか。</li>
+    <p>ア：共通鍵暗号方式</p>
+    <p>イ：公開鍵暗号方式</p>
+    <p>ウ：ハッシュ関数</p>
+    <p>エ：ブロックチェーン</p>
+    <p><span id="test"><input type="checkbox" id="blank32"><label for="blank32">　イ　</label></span></p>
+
+    <li>公開鍵暗号方式と共通鍵暗号方式において、共通鍵暗号方式だけが持つ特徴として、適切なものはどれか。</li>
+    <p>ア：暗号化に使用する鍵を第三者人知られても、安全通信ができる。</p>
+    <p>イ：個別に安全な通信を行う必要がある相手が複数であっても、鍵は一つでよい。</p>
+    <p>ウ：電子証明書によって、鍵の持ち主を確認できる。</p>
+    <p>エ：複合には、暗号化で使用した鍵と同一の鍵を用いる。</p>
+    <p><span id="test"><input type="checkbox" id="blank33"><label for="blank33">　エ　</label></span></p>
+
     
-    
-    
+
 
     </form>
 
