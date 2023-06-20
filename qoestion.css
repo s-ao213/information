@@ -19,3 +19,7 @@
     opacity: 1;
     background-color: lightblue;
 }
+
+table {
+    border-collapse: collapse;
+}
