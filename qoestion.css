@@ -24,3 +24,8 @@ table {
     border-collapse: collapse;
     border-width: 2px;
 }
+
+body {
+    padding-left: 150px;
+    padding-right: 150px;
+}
