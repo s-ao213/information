@@ -29,3 +29,25 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+#test2 label{
+    cursor: pointer;
+}
+
+#test2 input{
+    display: none;
+    margin: 0px;
+}
+
+#test2 { 
+    background-color: lightpink;
+}
+
+#test2 input+label{
+    opacity: 0;
+}
+
+#test2 input:checked+label{
+    opacity: 1;
+    background-color: white;
+}
