@@ -9,11 +9,48 @@
 
 <body>
     <form name="myTest">
-    <h1>前期末テスト <br>情報対策サイト</h1>
+    <u>
+        <h1>前期末テスト <br>情報対策サイト</h1>
+    </u>
     <input type="button" value="全て隠す" onclick="checkCLEAR()">
     <input type="button" value="全て表示" onclick="checkALL()">
 
-    <h2>講義ノート第9回</h2>
+    <u>
+        <h3>目次</h3>
+    </u>
+    <p>以下のリンクをクリックすると問題のページまで飛びます。</p>
+    <p>答えがあっているかどうかは各自自己責任で利用してください。またタイプミス等があれば教えて下さい。</p>
+    <u>
+        <h4>講義ノート</h4>
+    </u>
+    <ul>
+        <li><a href="#note9">講義ノート第9回</a></li>
+        <li><a href="#note10">講義ノート第10回</a></li>
+        <li><a href="#note11">講義ノート第11回</a></li>
+        <li><a href="#note12">講義ノート第12回</a></li>
+        <li><a href="#note13">講義ノート第13回</a></li>
+        <li><a href="#note14">講義ノート第14回</a></li>
+        <li><a href="#note15">講義ノート第15回</a></li>
+        <!-- <li><a href="#note">講義ノート第回</a></li> -->
+    </ul>
+
+    <u>
+        <h4>小テスト</h4>
+    </u>
+    <ul>
+        <li><a href="#testA">小テストの範囲</a></li>
+        <li><a href="#test1">小テスト第1回</a></li>
+        <li><a href="#test2">小テスト第2回</a></li>
+        <li><a href="#test3">小テスト第3回</a></li>
+        <li><a href="#test4">小テスト第4回</a></li>
+<!-- <li><a href="#test">小テスト第回</a></li> -->
+    </ul>
+
+
+    <section>
+        <u>
+            <h2 id="note9">講義ノート第9回</h2>
+        </u>
     
         <!-- <li></li>
         <p><span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span></p> -->
@@ -83,8 +120,12 @@
         <p><span id="test"><input type="checkbox" id="blank16"><label for="blank16">　ウ　</label></span></p>
 
         <br>
-
-    <h2>講義ノート第10回</h2>
+    </section>
+    
+    <section>
+        <u>
+            <h2 id="note10">講義ノート第10回</h2>
+        </u>
     <li>演習１ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
     <p><span id="test"><input type="checkbox" id="blank17"><label for="blank17">　　</label></span></p>
     
@@ -105,11 +146,53 @@
     <p><span id="test"><input type="checkbox" id="blank22"><label for="blank22">　　</label></span></p>
 
     <br>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="note11">講義ノート第11回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="note12">講義ノート第12回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="note13">講義ノート第13回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="note14">講義ノート第14回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="note15">講義ノート第15回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
     <input type="button" value="全て隠す" onclick="checkCLEAR()">
     <input type="button" value="全て表示" onclick="checkALL()">
 
-    <h1>小テスト範囲</h1>
-    <h2>小テスト第一回</h2>
+    <u>
+        <h1 id="testA">小テスト範囲</h1>
+    </u>
+    <section>
+        <u>
+            <h2 id="test1">小テスト第1回</h2>
+        </u>
 
     <li>バイオメトリクス認証に関する記述として、適切なものはどれか。</li>
     <p>ア：指紋や静脈を使用した認証は、ショルダーハックなどののぞき見行為行為によって容易に認証情報漏が漏洩する。</p>
@@ -133,8 +216,8 @@
     <p><span id="test"><input type="checkbox" id="blank25"><label for="blank25">　ウ　</label></span></p>
 
     <li>ファイルサーバに保存されている文書ファイルの内容をPCで直接編集した後、上書き保存しようとしたら”権限がないので保存できません”というメッセージが表示された。この文書ファイルとそれが保存されているフォルダに設定されていた権限の組合わせとして、適切なものはどれか。</li>
-        <br>
-        <table border="1">
+    <br>
+    <table border="1">
         <tr>
             <th>　選択肢　</th>
             <th>　ファイル読み取りの権限　</th>
@@ -171,6 +254,7 @@
         </tr>
     
     </table>
+
     <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　イ　</label></span></p>
 
     <li>インターネットにおいてドメイン名とIPアドレスの対応付けを行うサービスを提供しているサーバに保管されている管理情報を書き換えることによって、利用者を偽のサイトへ誘導する攻撃はどれか。</li>
@@ -240,12 +324,40 @@
     <p>エ：複合には、暗号化で使用した鍵と同一の鍵を用いる。</p>
     <p><span id="test"><input type="checkbox" id="blank35"><label for="blank35">　エ　</label></span></p>
 
-    
+    <br>
+    </section>
 
+    <section>
+        <u>
+            <h2 id="test2">小テスト第2回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="test3">小テスト第3回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="test4">小テスト第4回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
+
+    <section>
+        <u>
+            <h2 id="test5">小テスト第5回</h2>
+        </u>
+        <p>制作中</p>
+    </section>
 
     </form>
 
-<script></script>
+
 <script type="text/javascript" src="question.js"></script>
 
 </body>
