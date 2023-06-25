@@ -134,15 +134,32 @@
             <h2 id="note10">講義ノート第10回</h2>
         </u>
 
-    <li>確認１ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
-    
+        <li>確認１ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
+    <p id="p2"><img src="兵庫の合計人数.png" width="350" height="220"></p>
+    <input type="button" value="ボタン２" onclick="clickBtn2()" />
+    <script>
+        //初期表示は非表示
+        document.getElementById("p2").style.visibility ="hidden";
+        
+        function clickBtn2(){
+            const p2 = document.getElementById("p2");
+        
+            if(p2.style.visibility=="visible"){
+                // hiddenで非表示
+                p2.style.visibility ="hidden";
+            }else{
+                // visibleで表示
+                p2.style.visibility ="visible";
+            }
+        }
+    </script>
 
-    <div class="btn-container">
-        <button id="btn2">答えを表示する</button>
+    <!-- <div class="btn-container">
+        <button id="btn2">答えを表示する</button> -->
     
         <!-- クリックで表示させるテキストにはhiddenクラスを付ける -->
-        <p id="btn2-text" class="hidden"><img src="兵庫の合計人数.png" width="350" height="220"></p>
-    </div>
+        <!-- <p id="btn2-text" class="hidden"><img src="兵庫の合計人数.png" width="350" height="220"></p>
+    </div> -->
 
 
     <li>確認２ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
