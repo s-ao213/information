@@ -134,9 +134,10 @@
             <h2 id="note10">講義ノート第10回</h2>
         </u>
 
-        <li>確認１ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
-    <p id="p2"><img src="兵庫の合計人数.png" width="350" height="220"></p>
-    <input type="button" value="ボタン２" onclick="clickBtn2()" />
+    <li>確認１ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
+
+    <p id="p2" for="blank17"><img src="自由度10.png" width="350" height="220"></p>
+    <input id="blank17" type="button" value="答えを表示する" onclick="clickBtn2()" />
     <script>
         //初期表示は非表示
         document.getElementById("p2").style.visibility ="hidden";
@@ -163,20 +164,74 @@
 
 
     <li>確認２ 自由度 10 の場合の t 分布の形状がどうなるか、同様に表示してみよ。</li>
-    <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　　</label></span></p>
+    <p id="p1" for="blank18"><img src="兵庫の合計人数.png" width="350" height="220"></p>
+    <input id="blank18" type="button" value="答えを表示する" onclick="clickBtn1()" />
+    <script>
+        //初期表示は非表示
+        document.getElementById("p1").style.visibility ="hidden";
+        
+        function clickBtn1(){
+            const p1 = document.getElementById("p1");
+        
+            if(p1.style.visibility=="visible"){
+                // hiddenで非表示
+                p1.style.visibility ="hidden";
+            }else{
+                // visibleで表示
+                p1.style.visibility ="visible";
+            }
+        }
+    </script>
+    <!-- <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　　</label></span></p> -->
     
     <li>確認３ 試行回数を10000にしてみよ。</li>
-    <p><span id="test"><input type="checkbox" id="blank19"><label for="blank19">　　</label></span></p>
+    <p id="p3" for="blank19"><img src="モンテカルロシミュレーション.png" width="350" height="220"></p>
+    <input id="blank19" type="button" value="答えを表示する" onclick="clickBtn3()" />
+    <script>
+        //初期表示は非表示
+        document.getElementById("p3").style.visibility ="hidden";
+        
+        function clickBtn3(){
+            const p1 = document.getElementById("p3");
+        
+            if(p3.style.visibility=="visible"){
+                // hiddenで非表示
+                p3.style.visibility ="hidden";
+            }else{
+                // visibleで表示
+                p3.style.visibility ="visible";
+            }
+        }
+    </script>
+    <!-- <p><span id="test"><input type="checkbox" id="blank19"><label for="blank19">　　</label></span></p> -->
     
     <li>確認４ モンロカルロ・シュミュレーションで√２を求めてみよ。</li>
     <p>ヒント:0から2までの乱数(=RAND()*2)を発生させて、それが√2より小さい確率は√2/2になるので、それを2倍すれば√2になります。ただし、√2を求めるために√2を使ってはいけないので、乱数が√2より小さい確率を求める代わりに、乱数の2乗が2より小さい確率を使います。</p>
-    <p><span id="test"><input type="checkbox" id="blank20"><label for="blank20">　　</label></span></p>
+    <p id="p4" for="blank20"><img src="モンテカルロ法.png" width="350" height="220"></p>
+    <input id="blank19" type="button" value="答えを表示する" onclick="clickBtn4()" />
+    <script>
+        //初期表示は非表示
+        document.getElementById("p4").style.visibility ="hidden";
+        
+        function clickBtn4(){
+            const p4 = document.getElementById("p4");
+        
+            if(p4.style.visibility=="visible"){
+                // hiddenで非表示
+                p4.style.visibility ="hidden";
+            }else{
+                // visibleで表示
+                p4.style.visibility ="visible";
+            }
+        }
+    </script>
+    <!-- <p><span id="test"><input type="checkbox" id="blank20"><label for="blank20">　帰無仮説と対立仮説　</label></span></p> -->
     
     <li>確認５ 統計仮説における2つの仮設は何か答えよ。</li>
-    <p><span id="test"><input type="checkbox" id="blank21"><label for="blank21">　　</label></span></p>
+    <p><span id="test"><input type="checkbox" id="blank21"><label for="blank21">　帰無仮説と対立仮説　</label></span></p>
     
     <li>確認６ 多くの場合、任意の確率分布に伴う母集団から抽出された標本の数が十分多い場合、標本平均の分布は正規分布に伴うという定理を何というか答えよ。</li>
-    <p><span id="test"><input type="checkbox" id="blank22"><label for="blank22">　　</label></span></p>
+    <p><span id="test"><input type="checkbox" id="blank22"><label for="blank22">　中心極限定理　</label></span></p>
 
     <br>
     </section>
