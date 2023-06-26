@@ -26,8 +26,8 @@ table {
 }
 
 body {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* トップへ戻るボタン */
@@ -53,23 +53,3 @@ html{
     scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 499px) {
-/*　画面サイズ 499pxまで適用　*/
-    .content {
-        color: #red;
-    }
-}
-
-@media screen and (min-width: 500px) and (max-width: 999px) {
-/*　画面サイズ 500pxから999pxまで適用　*/
-    .content {
-        color: #green;
-    }
-}
-
-@media screen and (min-width:1000px) {
-/*　画面サイズ 1000px以上から適用　*/
-    .content {
-        color: #blue;
-    }
-}
