@@ -9,6 +9,7 @@
 
 #test { 
     background-color: lightpink;
+    border-radius:10px;
 }
 
 #test input+label{
@@ -18,6 +19,7 @@
 #test input:checked+label{
     opacity: 1;
     background-color: lightblue;
+    border-radius:10px;
 }
 
 table {
