@@ -30,11 +30,19 @@ table {
 body {
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #dcd6d9;
+    /* background-color: #dcd6d9; */
+    background-color: white;
     font-family: 'M PLUS 1p', sans-serif;
     /* font-family: 'Sawarabi Gothic', sans-serif; */
 }
 
+.white-bg {
+    background-color: white;
+}
+
+.grey-bg {
+    background-color: #dcd6d9;
+}
 /* トップへ戻るボタン */
 .page_top_btn {
     position: fixed;
