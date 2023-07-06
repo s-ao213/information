@@ -522,12 +522,11 @@
             <h2 id="test3">小テスト第3回</h2>
             <p><a href="#index">目次に戻る</a></p>
         </u>
-        <p>制作中</p>
         <li>データ処理に関する記述a~cのうち、DBMSを導入することによって得られた効果だけを全て挙げたものはどれか。</li>
         <p>a:同じデータに対して複数のプログラムから同時にアクセスしても、一貫性が保たれる。</p>
         <p>b:各トランザクションの優先度に応じて、処理する順番をDBMSが決めるので、リアルタイム処理の応答時間が短くなる。</p>
         <p>c:仮想記憶のページ管理の効率が良くなるので、データ量にかかわらずデータへのアクセス時間が一定になる。</p>
-        <p><span id="test"><input type="checkbox" id="blank68"><label for="blank68">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank68"><label for="blank68">　ア　</label></span></p>
 
         <li>関係データベースで管理している"従業員"表から、氏名の列だけを取り出す操作を何というか。</li>
         <p>従業員</p>
@@ -573,7 +572,7 @@
         <p>イ：射影</p>
         <p>ウ：選択</p>
         <p>エ：和</p>
-        <p><span id="test"><input type="checkbox" id="blank69"><label for="blank69">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank69"><label for="blank69">　イ　</label></span></p>
 
         <li>次に示す項目を使って関係データベースで管理する"社員"表を設計する。他の項目から導出できる、冗長な項目はどれか。</li>
         <p>社員</p>
@@ -587,22 +586,247 @@
                 <td>　趣味　</td>
             </tr>
         </table>
+
         <p>ア：生年月日</p>
         <p>イ：現在の満年齢</p>
-        <p>ウ：</p>
-        <p>エ：</p>
-        <p><span id="test"><input type="checkbox" id="blank70"><label for="blank70">　　</label></span></p>
+        <p>ウ：住所</p>
+        <p>エ：趣味</p>
+        <p><span id="test"><input type="checkbox" id="blank70"><label for="blank70">　イ　</label></span></p>
 
-        <li></li>
-        <p><span id="test"><input type="checkbox" id="blank71"><label for="blank71">　　</label></span></p>
+        <li>顧客名と住所、商品名と単価、顧客が注文した商品の個数と注文した日付を関係データベースで管理したい。正規化された表として、適切なものはどれか。ここで、下線は主キーを表し、顧客名や商品名にはそれぞれ同一のものがあるとする。</li>
+        
 
-        <li></li>
-        <p><span id="test"><input type="checkbox" id="blank72"><label for="blank72">　　</label></span></p>
+        
+        <table border="4">
+            <p>ア</p>
+            <p>顧客</p>
+            <tr align="center" id="underline">
+                <td><u>顧客番号</u></td>
+                <td>顧客名</td>
+                <td>住所</td>
+            </tr>
+        </table>
+        
+        <table border="5">
+            <p>商品</p>
+            <tr align="center" id="underline">
+                <td><u>商品番号</u></td>
+                <td>商品名</td>
+                <td>単価</td>
+            </tr>
+        </table>
+        
+        <table border="6">
+            <p>注文</p>
+            <tr align="center" id="underline">
+                <td><u>注文番号</u></td>
+                <td>顧客番号</td>
+                <td>商品番号</td>
+                <td>個数</td>
+                <td>日付</td>
+            </tr>
+        </table>
+        
+        <table border="7">
+            <p>イ</p>
+            <p>顧客</p>
+            <tr align="center" id="underline">
+                <td><u>顧客番号</u></td>
+                <td>顧客名</td>
+                <td>住所</td>
+            </tr>
+        </table>
+        
+        <table border="8">
+            <p>商品</p>
+            <tr align="center" id="underline">
+                <td><u>商品番号</u></td>
+                <td>商品名</td>
+                <td>単価</td>
+            </tr>
+        </table>
+        
+        <table border="9">
+            <p>注文</p>
+            <tr align="center" id="underline">
+                <td><u>注文番号</u></td>
+                <td>顧客番号</td>
+                <td>商品名</td>
+                <td>個数</td>
+                <td>日付</td>
+            </tr>
+        </table>
+        
+        <table border="10">
+            <p>ウ</p>
+            <p>顧客</p>
+            <tr align="center" id="underline">
+                <td><u>顧客番号</u></td>
+                <td>顧客名</td>
+                <td>住所</td>
+                <td>日付</td>
+            </tr>
+        </table>
+        
+        <table border="11">
+            <p>注文</p>
+            <tr align="center" id="underline">
+                <td><u>注文番号</u></td>
+                <td>顧客名</td>
+                <td>商品名</td>
+                <td>単価</td>
+                <td>個数</td>
+            </tr>
+        </table>
+        
+        <table border="14">
+            <p>商品</p>
+            <tr align="center" id="underline">
+                <td><u>商品番号</u></td>
+                <td>商品名</td>
+                <td>単価</td>
+                <td>個数</td>
+            </tr>
+        </table>
+        
+        <table border="15">
+            <p>注文</p>
+            <tr align="center" id="underline">
+                <td><u>注文番号</u></td>
+                <td>商品番号</td>
+                <td>顧客名</td>
+                <td>住所</td>   
+                <td>日付</td>
+            </tr>
+        </table>
+        
 
-        <li></li>
+        <p><span id="test"><input type="checkbox" id="blank71"><label for="blank71">　ア　</label></span></p>
+
+        <li>関係データベースで管理された"商品"表、"売上"表から売上日が5月で、かつ、商品ごとの合計額が20,000円以上になっている商品だけを全て挙げたものはどれか。</li>
+        <table border="16">
+            <p></p>
+            <tr align="center" id="tl">
+                <td>　商品コード　</td>
+                <td>　商品名　</td>
+                <td>　単価（円）　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　0001　</td>
+                <td>　商品A　</td>
+                <td>　2,000　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　0002　</td>
+                <td>　商品B　</td>
+                <td>　4,000　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　0003　</td>
+                <td>　商品C　</td>
+                <td>　7,000　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　0004　</td>
+                <td>　商品D　</td>
+                <td>　10,000　</td>
+            </tr>
+        </table>
+
+        <table border="17">
+            <p>売上</p>
+            <tr align="center" id="tl">
+                <td>　売上番号　</td>
+                <td>　商品コード　</td>
+                <td>　個数　</td>
+                <td>　売上日　</td>
+                <td>　配達日　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00001　</td>
+                <td>　0004　</td>
+                <td>　3　</td>
+                <td>　4/30　</td>
+                <td>　5/2　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00002　</td>
+                <td>　0001　</td>
+                <td>　3　</td>
+                <td>　4/30　</td>
+                <td>　5/3　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00003　</td>
+                <td>　0003　</td>
+                <td>　3　</td>
+                <td>　5/15　</td>
+                <td>　5/17　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00004　</td>
+                <td>　0001　</td>
+                <td>　5　</td>
+                <td>　5/15　</td>
+                <td>　5/18　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00005　</td>
+                <td>　0002　</td>
+                <td>　3　</td>
+                <td>　5/5　</td>
+                <td>　5/18　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00006　</td>
+                <td>　0001　</td>
+                <td>　4　</td>
+                <td>　5/10　</td>
+                <td>　5/20　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00007　</td>
+                <td>　0002　</td>
+                <td>　3　</td>
+                <td>　5/30　</td>
+                <td>　6/2　</td>
+            </tr>
+
+            <tr align="center">
+                <td>　Z00008　</td>
+                <td>　0003　</td>
+                <td>　1　</td>
+                <td>　6/8　</td>
+                <td>　6/10　</td>
+            </tr>
+        </table>
+        <p>ア:商品A、商品B、商品C</p>
+        <p>イ:商品A、商品B、商品C、商品D</p>
+        <p>ウ:商品B、商品C</p>
+        <p>エ:商品C</p>
+        <p><span id="test"><input type="checkbox" id="blank72"><label for="blank72">　ウ　</label></span></p>
+
+        <li>次のベン図の網掛けした部分の検索結果はどれか。</li>
+        <ul class="venn">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+        
         <p><span id="test"><input type="checkbox" id="blank73"><label for="blank73">　　</label></span></p>
 
-        <li></li>
+        <li>関係データベースおいて、表Aと表Bの積集合を実行した結果はどれか。</li>
         <p><span id="test"><input type="checkbox" id="blank74"><label for="blank74">　　</label></span></p>
 
         <li></li>
